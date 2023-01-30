@@ -19,10 +19,10 @@ function App() {
       <NavBar />
       <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
         <Switch>
-          <Route exact path="/" component={Auth(LandingPage, null)} /> 
-          <Route exact path="/login" component={Auth(LoginPage, false)} /> 
+          <Route exact path="/" component={Auth(LandingPage, null)} /> { /* 누구나 접근 가능 */ }
+          <Route exact path="/login" component={Auth(LoginPage, false)} /> { /* 로그인한 사람 접근 불가 */}
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
-          <Route exact path="/video/upload" component={Auth(VideoUploadPage, true)} /> { /*sadf */ }
+          <Route exact path="/video/upload" component={Auth(VideoUploadPage, true)} /> { /* 로그인한 사람만 접근 가능 */ }
         </Switch>
       </div>
       <Footer />

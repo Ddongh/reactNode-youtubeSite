@@ -3,4 +3,4 @@ node_modules
 
 # 이미지파일과 동영상파일 무시..
 *.png
-*.pm4
+*.mp4

@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # 이미지파일과 동영상파일 무시
-/server/upload/
+*.png
+*.pm4

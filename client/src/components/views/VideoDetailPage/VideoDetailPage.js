@@ -1,6 +1,7 @@
 import React,  {useEffect, useState}from 'react'
-import { Row, Col, List, Avatar, Input } from 'antd'
+import { Row, Col, List, Avatar } from 'antd'
 import Axios from 'axios'
+import SideVideo from './Sections/SideVideo'
 // import { $CombinedState } from 'redux'
 // import { post } from '../../../../../server/routes/video'
 
@@ -14,10 +15,10 @@ function VideoDetailPage(props) {
     useEffect(() => {
         Axios.post('/api/video/getVideoDetail', variable)
             .then(response => {
-                if(response.data.success) {
+                if(response.data.success) { 
                     setvideoDetail(response.data.videoDetail)
                 } else {
-                    alert('비다오 정보를 가져오기를 실패했습니다.')
+                    alert('비el오 정보를 가져오기를 실패했습니다.')
                 }
             })
 
@@ -46,7 +47,7 @@ function VideoDetailPage(props) {
                 </Col>
         
                 <Col lg={6} xs={24} >
-                    Side Videos
+                    <SideVideo />
                 </Col>
             </Row>
           )

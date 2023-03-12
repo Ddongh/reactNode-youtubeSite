@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f618a6cbada6ab7bc73f34a637f17ba9",
+    "revision": "fee8019a93f1adde3955007530f8ef13",
     "url": "/reactNode-youtubeSite/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactNode-youtubeSite/static/css/2.051905ae.chunk.css"
   },
   {
-    "revision": "88e334c5261b2e72da60",
+    "revision": "39ef668d9a624ddfe6ac",
     "url": "/reactNode-youtubeSite/static/css/main.b5d3c51a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactNode-youtubeSite/static/js/2.582e8023.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "88e334c5261b2e72da60",
-    "url": "/reactNode-youtubeSite/static/js/main.0bad93e0.chunk.js"
+    "revision": "39ef668d9a624ddfe6ac",
+    "url": "/reactNode-youtubeSite/static/js/main.fdc68e1f.chunk.js"
   },
   {
     "revision": "d16f98bdfb29294c33b1",

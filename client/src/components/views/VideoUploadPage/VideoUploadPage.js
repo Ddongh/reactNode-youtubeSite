@@ -82,6 +82,8 @@ function VideoUploadPage(props) {
 
         Axios.post('/api/video/uploadfiles', formData, config)
             .then(response => {
+                console.log(response.data)
+
                 if(response.data.success) {
                     console.log(response.data)
 
@@ -104,7 +106,7 @@ function VideoUploadPage(props) {
                         }
                     })
                 } else {
-                    alert('비디오 업로 실패')
+                    alert('비디오 업로드 실패')
                 }
             })
     }

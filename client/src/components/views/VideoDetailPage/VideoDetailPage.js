@@ -2,6 +2,7 @@ import React,  {useEffect, useState}from 'react'
 import { Row, Col, List, Avatar } from 'antd'
 import Axios from 'axios'
 import SideVideo from './Sections/SideVideo'
+import Subscribe from './Sections/Subscribe'
 // import { $CombinedState } from 'redux'
 // import { post } from '../../../../../server/routes/video'
 
@@ -33,7 +34,7 @@ function VideoDetailPage(props) {
                         <video style={{ width: '100%'}} src={`http://localhost:5001/${videoDetail.filePath}`} controls />
          
                         <List.Item
-                            actions
+                            actions={[<Subscribe />]}
                         >
                             <List.Item.Meta
                                 Avatar={<Avatar src={videoDetail.writer.image} /> }

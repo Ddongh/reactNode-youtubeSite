@@ -95,7 +95,7 @@ function VideoUploadPage(props) {
                     setFilePath(response.data.url)
 
                     Axios.post('/api/video/thumbnail', variable)
-                    .then(response => {
+                    .then(response => {debugger
                         if(response.data.success) {
                             
                             setDuration(response.data.fileDuration)

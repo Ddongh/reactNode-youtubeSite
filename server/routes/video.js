@@ -31,7 +31,7 @@ const upload = multer({ storage: storage }).single("file");
 //=================================
 
 router.post('/uploadfiles', (req, res) => {
-
+    
     // 비디오를 서버에 저장한다.
     upload(req, res, err => {debugger;
         if(err) {
@@ -80,12 +80,12 @@ router.get('/getVideos', (req, res) => {
 })
 
 router.post('/thumbnail', (req, res) => {
-
+    
    // 썸네일 생성하고 비디오 러닝타임도 가져오기
 
     let filePath = ""
     let fileDuration = ""
-
+    
    // 비디오 정보 가져오기
    ffmpeg.ffprobe(req.body.url, function(err, metadata) {
     console.dir(metadata);

@@ -18,7 +18,7 @@ function VideoDetailPage(props) {
                 if(response.data.success) { 
                     setvideoDetail(response.data.videoDetail)
                 } else {
-                    alert('비el오 정보를 가져오기를 실패했습니다.')
+                    alert('비디오 정보를 가져오기를 실패했습니다.')
                 }
             })
 
@@ -36,7 +36,7 @@ function VideoDetailPage(props) {
                             actions
                         >
                             <List.Item.Meta
-                                // Avatar={<Avatar src={videoDetail.writer.image} /> }
+                                Avatar={<Avatar src={videoDetail.writer.image} /> }
                                 title={videoDetail.writer.name}
                                 description={videoDetail.description}
                             />

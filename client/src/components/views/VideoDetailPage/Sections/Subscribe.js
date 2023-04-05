@@ -5,14 +5,16 @@ function Subscribe(props) {
 
   const [SubscribeNumber, setSubscribeNumber] = useState(0)
   const [Subscribed, setSubscribed] = useState(false)
-  useEffect((props) => {
+  useEffect(() => {
   
-    let variable = {userTo:props.userTo}
-      
+    let variable = { userTo:props.userTo }
+    // let variable = { props.userTo }
+    // let variable = "";
+    // let subscribedVariable = { userTo: props.userTo, userFrom: localStorage.getItem('userId') }
+
     Axios.post('/api/subscribe/subscribeNumber', variable)
       .then( response => {
         if(response.data.success) {
-          console.log("11111", response.data)
           setSubscribeNumber(response.data.SubscribeNumber)
         } else {
           alert('구독자 수 정보를 받아 올 수 없습니다.')
@@ -24,7 +26,6 @@ function Subscribe(props) {
     Axios.post('/api/subscribe/subscribed', subscribedVariable)
       .then(response => {
         if(response.data.success ) {
-          console.log("22222", response.data)
           setSubscribed(response.data.subscribed)
         } else {
           alert('정보를 받아오지 못했습니다.')
@@ -54,5 +55,4 @@ function Subscribe(props) {
   )
 }
 
-export default 
-Subscribe
+export default Subscribe

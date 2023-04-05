@@ -22,7 +22,7 @@ router.post('/subscribed', (req, res) => {
     .exec((err, subscriber) => {
         if(err) return res.status(400).send(err);
         let result = false
-        if(subscribe.length !== 0) {
+        if(subscriber.length !== 0) {
             return true
         }
         res.status(200).json({ success: true, subscribed: result })

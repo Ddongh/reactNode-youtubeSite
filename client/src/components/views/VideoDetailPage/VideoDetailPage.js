@@ -32,7 +32,7 @@ function VideoDetailPage(props) {
                     <div style={{ width: '100%', padding: '3rem 4rem'}}>
         
                         <video style={{ width: '100%'}} src={`http://localhost:5001/${videoDetail.filePath}`} controls />
-         
+                        
                         <List.Item
                             actions={[<Subscribe userTo={ videoDetail.writer._id } />]}
                         >
